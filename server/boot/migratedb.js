@@ -18,6 +18,8 @@ module.exports = function(app) {
       }
 
       console.log('Model ' + key + ' updated');
+
+      app.dataSources[models[key].dataSource].disconnect();
     });
   }
 
@@ -35,6 +37,8 @@ module.exports = function(app) {
         throw error;
       }
       console.log('Model ' + key + ' migrated');
+
+      app.dataSources[models[key].dataSource].disconnect();
     });
   }
 
