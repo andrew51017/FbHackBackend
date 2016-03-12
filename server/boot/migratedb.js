@@ -4,11 +4,16 @@ module.exports = function(app) {
   var datasources = require(path.resolve(__dirname, '../datasources.json'));
 
   function autoUpdateAll() {
-    Object.keys(models).forEach(function(key) {
-      if (isValidKey(key)) {
-        update(key);
-      }
-    });
+    var modelKeys = Object.keys(models);
+    console.log(modelKeys);
+
+    app.datasources.db.autoupdate(modelKeys, function(error) {
+
+        console.log("Update completed!");
+        app.datasources.db.disconnect();
+
+    })
+
   }
 
   function update(key){
