@@ -21,15 +21,15 @@
   },
   "validations": [],
   "relations": {
-    "address": {
-      "type": "hasOne",
-      "model": "address",
-      "foreignKey": "address_id"
+    "customerJobs": {
+      "type": "hasMany",
+      "model": "job",
+      "foreignKey": "customer_id"
     },
-    "paymentDetails": {
-      "type": "hasOne",
-      "model": "paymentdetails",
-      "foreignKey": "payment_details_id"
+    "businessJobs": {
+      "type": "hasMany",
+      "model": "job",
+      "foreignKey": "business_id"
     }
   },
   "acls": [],
