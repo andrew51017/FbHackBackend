@@ -1,0 +1,61 @@
+{
+  "name": "job",
+  "plural": "jobs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "destination": {
+      "type": "string",
+      "required": true
+    },
+    "item_price": {
+      "type": "number",
+      "required": true
+    },
+    "job_price": {
+      "type": "number"
+    },
+    "date_added": {
+      "type": "date"
+    },
+    "date_ending": {
+      "type": "date",
+      "required": true
+    },
+    "received_by_customer": {
+      "type": "boolean",
+      "required": true
+    },
+    "dropped_by_courier": {
+      "type": "boolean",
+      "required": true
+    },
+    "accepted_by_courier": {
+      "type": "boolean",
+      "required": true
+    },
+    "collected_from_business": {
+      "type": "boolean",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
