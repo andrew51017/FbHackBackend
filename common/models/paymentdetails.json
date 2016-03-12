@@ -1,0 +1,29 @@
+{
+  "name": "paymentdetails",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "card_type": {
+      "type": "string"
+    },
+    "card_number": {
+      "type": "string"
+    },
+    "expiry": {
+      "type": "string"
+    },
+    "cvc": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

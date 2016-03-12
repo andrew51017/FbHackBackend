@@ -1,0 +1,37 @@
+{
+  "name": "ApplicationUser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "image_url": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "address": {
+      "type": "hasOne",
+      "model": "address",
+      "foreignKey": "address_id"
+    },
+    "paymentDetails": {
+      "type": "hasOne",
+      "model": "paymentdetails",
+      "foreignKey": "payment_details_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

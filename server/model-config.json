@@ -31,5 +31,17 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "ApplicationUser": {
+    "dataSource": "db",
+    "public": true
+  },
+  "address": {
+    "dataSource": "db",
+    "public": false
+  },
+  "paymentdetails": {
+    "dataSource": "db",
+    "public": false
   }
 }
