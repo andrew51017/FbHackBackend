@@ -52,14 +52,18 @@
     "collected_from_business": {
       "type": "boolean",
       "required": true
+    }, 
+    "highest_bid": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
   "relations": {
     "bids": {
-    "type": "hasMany",
-    "model": "bid",
-    "foreignKey": "job_id"
+      "type": "hasMany",
+      "model": "bid",
+      "foreignKey": "job_id"
     },
     "user": {
       "type": "hasOne",
