@@ -10,7 +10,6 @@ module.exports = function(app) {
     app.datasources.db.autoupdate(modelKeys, function(error) {
 
         console.log("Update completed!");
-        app.datasources.db.disconnect();
 
     })
 
