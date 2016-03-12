@@ -35,5 +35,9 @@
   "job": {
     "dataSource": "db",
     "public": true
+  },
+  "bid": {
+    "dataSource": "db",
+    "public": true
   }
 }

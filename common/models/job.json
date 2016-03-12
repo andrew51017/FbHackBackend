@@ -55,7 +55,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "bids": {
+    "type": "hasMany",
+    "model": "bid",
+    "foreignKey": "job_id"
+    },
+    "user": {
+      "type": "hasOne",
+      "model": "ApplicationUser",
+      "foreignKey": "customer_id"
+    },
+    "business": {
+      "type": "hasOne",
+      "model": "ApplicationUser",
+      "foreignKey": "business_id"
+    }
+    },
   "acls": [],
   "methods": {}
 }
