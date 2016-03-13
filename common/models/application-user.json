@@ -34,6 +34,11 @@
       "type": "hasMany",
       "model": "job",
       "foreignKey": "business_id"
+    },
+    "bids": {
+      "type": "hasMany",
+      "model": "bid",
+      "foreignKey": "job_id"
     }
   },
   "acls": [],
