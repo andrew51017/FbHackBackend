@@ -38,7 +38,7 @@
     "bids": {
       "type": "hasMany",
       "model": "bid",
-      "foreignKey": "job_id"
+      "foreignKey": "user_id"
     }
   },
   "acls": [],
