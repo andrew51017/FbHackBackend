@@ -21,6 +21,10 @@
     "proposed_delivery_time":{
       "type": "date",
       "required": true
+    },
+    "winning_bid":{
+      "type": "boolean",
+      "required": true
     }
   },
   "validations": [],
