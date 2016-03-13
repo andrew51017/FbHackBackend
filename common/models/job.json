@@ -37,6 +37,9 @@
       "type": "date",
       "required": true
     },
+    "date_required": {
+      "type": "date"
+    },
     "received_by_customer": {
       "type": "boolean",
       "required": true
