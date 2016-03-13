@@ -56,7 +56,7 @@
     "bidding_complete": {
       "type": "boolean",
       "required": true
-    },
+    }
   },
   "validations": [],
   "relations": {
