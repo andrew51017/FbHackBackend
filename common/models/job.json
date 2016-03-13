@@ -52,7 +52,11 @@
     "collected_from_business": {
       "type": "boolean",
       "required": true
-    }
+    },
+    "bidding_complete": {
+      "type": "boolean",
+      "required": true
+    },
   },
   "validations": [],
   "relations": {
